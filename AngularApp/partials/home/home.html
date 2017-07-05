@@ -1,0 +1,25 @@
+<head>
+  <title>Home</title>
+</head>
+<body class="container">
+  <div class="row" style="position: fixed; top:0px; left: 0px; margin: 0px; padding: 0px; background-color: white; border-bottom: 3px solid #0066B3; color: #0066B3; width: 100vw;" >
+    <div class="col s12 m12 l12" >
+      <nav style="box-shadow: none;">
+        <div class="nav-wrapper" style="background-color: white; color: #0066B3">
+          <a href="#" class="brand-logo"><img src="Images/logo_login.png" alt="" class="responsive-img">	</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li style="color: black;"><span style="color: #0066B3;">Welcome,</span> {{userName}}</li>
+            <li><a style="color: #0066B3; cursor: pointer;" ng-click="logout()">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="row" style="position: fixed; left: 15%;height: 30%;">
+    <div class="col s5 z-depth-6 card-panel center"  style="background-color: white;margin-top: 0px; padding: 0px;height: 100%;" >
+        <div style="padding: 20px;"> 
+          <h4>Good {{message}}</h4>
+		    </div>
+	  </div>    
+  </div>          
+</body>

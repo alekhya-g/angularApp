@@ -1,0 +1,46 @@
+<head>
+  <title>Login</title>
+</head>
+<body>
+  <div id="login-page"class="row">
+    <div class="row"></div>  
+    <div class="col s12 z-depth-6 card-panel center"  style="background-color: white;margin-top: 0px;margin-right: 40px;" >
+      <form class="login-form">
+        <div class="row" style="margin-bottom: 0px;">
+          <div class="card-panel" style="box-shadow: none; border-bottom: 1px solid lightgray; padding: 0px;">
+            <img style="padding: 10px 0px;" src="Images/logo_login.png" alt="" class="responsive-img">		
+          </div> 
+        </div>
+		   
+		    <div class="card-panel" style="margin: 0px; padding: 0px; box-shadow: none;">
+		      <div class="row margin">
+		        <div class="input-field col s12">
+              <input id="text" type="text" class="validate" ng-model="userName">
+              <label for="text" id="textLabel">User Name</label>
+            </div>
+          </div>
+          <div class="row margin">
+            <div class="input-field col s12">
+              <input id="password" type="password" ng-model="password">
+              <label for="password" id="passwordLabel">Password</label>
+  		      </div>
+          </div>
+			    <div class="row">
+            <div class="input-field col s12">
+              <a ng-click="login()" class="btn waves-effect waves-light col s12">Login</a>
+            </div>
+          </div>
+		    </div>
+      </form>
+		</div>
+	  <div class="row" style="background-color: #f5821e;">
+      <div class="input-field col s12" style="margin-top: 0px;padding-bottom: 10px;">
+        <p class="margin medium-small center"><a href="" style="color: white; font-weight: 200;">Don't have an account?</a></p>
+        <p class="margin medium-small center"><a ui-sref="register" ng-click="register()" style="color: white; font-weight: bolder;">Register</a></p>
+      </div>
+    </div> 
+	  <div class="col s12 z-depth-6 center"  style="margin-top: 0px; padding-top: 0px;color: gray;font-size:11px;" >
+	    www.hcltech.com | @copyright 2017
+	  </div>
+  </div>
+</body>
